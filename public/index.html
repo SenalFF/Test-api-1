@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube Downloader</title>
+</head>
+<body style="font-family: sans-serif; text-align: center; margin-top: 50px;">
+  <h1>YT Downloader</h1>
+  <input id="ytUrl" type="text" placeholder="Enter YouTube URL" style="width: 300px; padding: 10px;">
+  <br><br>
+  <button onclick="download('mp3')">Download MP3</button>
+  <button onclick="download('mp4')">Download MP4</button>
+
+  <script>
+    function download(type) {
+      const url = document.getElementById('ytUrl').value;
+      if (!url) return alert('Please enter a URL');
+      window.open(`/download/${type}?url=${encodeURIComponent(url)}`, '_blank');
+    }
+  </script>
+</body>
+</html>
