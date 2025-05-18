@@ -1,0 +1,29 @@
+{
+  "name": "yt-downloader-api",
+  "version": "1.0.0",
+  "description": "A simple API to download YouTube videos as MP3 or MP4.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "youtube",
+    "downloader",
+    "mp3",
+    "mp4",
+    "api",
+    "express",
+    "commonjs"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.4",
+    "express-rate-limit": "^7.0.0",
+    "ffmpeg-static": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "ytdl-core": "^4.11.4"
+  }
+}
